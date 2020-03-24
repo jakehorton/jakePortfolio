@@ -58,7 +58,7 @@ function App() {
 <h2>About Me</h2>
 <div className="text">
       <span> My name is Jake Horton BSc MSc, and I'm a trainee Software Developer.</span>
-      <span> As a recent graduate of an intensive 12-week software-development bootcamp, I have been trained in many of the latest technologies used including: Javascript, Java, PostgreSQL/mySQL, and have experience with frameworks and libraries including: React, Spring and Bootstrap. </span>
+      <span> As a recent graduate of an intensive 12-week software-development bootcamp, I have been trained in many of the latest technologies used including: <strong>Javascript</strong>, <strong>Java</strong>, <strong>PostgreSQL/mySQL</strong> and have experience with frameworks and libraries including: <strong>React</strong>, <strong>Spring </strong>and <strong>Bootstrap</strong>. </span>
       <span> </span>
       </div>
       </div>
@@ -159,7 +159,7 @@ function App() {
 <h2>Client Website</h2>
 <div className="text">
 Calsy Stickers Signs Designs are a Designs and Signage company with a strong brand identity. 
-The client brief was to build a fully-responsive site that focused on UX/customer journey and that could be edited in-house as and when required, all whilst retaining the company aesthetic. I decided to build the site using Gatsby alongside Netlify CMS in order for snappy page loading, quick hosting, and and easy to use CMS for programmatically adding pages.
+The client brief was to build a fully-responsive site that focused on UX/customer journey and that could be edited in-house as and when required, all whilst retaining the company aesthetic. I decided to build the site using <strong>Gatsby</strong> alongside <strong>Netlify CMS</strong> in order for snappy page loading, quick hosting, and and easy to use CMS for programmatically adding pages.
 </div>
 </div>
 
@@ -200,7 +200,7 @@ The client brief was to build a fully-responsive site that focused on UX/custome
 </h1>
 <h2>Full -stack Campsite Database</h2>
 <div className="text2">
-YelpCamp is a camping database built using Node.js, Express and MongoDB. The application uses RESTful routing and features user authentication and authorisation, as well as a Google Maps API. Users can create an account, login, and then go on to create and (with the right permissions) edit their own campsites!
+YelpCamp is a camping database built using <strong>Node.js</strong>, <strong>Express</strong> and <strong>MongoDB</strong>. The application uses RESTful routing and features user authentication and authorisation, as well as a Google Maps API. Users can create an account, login, and then go on to create and (with the right permissions) edit their own campsites!
 </div>
 </div>
 
@@ -228,9 +228,9 @@ YelpCamp is a camping database built using Node.js, Express and MongoDB. The app
 </h1>
 <h2>Interactive Fish Market</h2>
 <div className="text">
-Catch Of The Day is a React app in the form of an interactive Fish Market - which is obviously just what you came here for!
+Catch Of The Day is a <strong>React</strong> app in the form of an interactive Fish Market - which is obviously just what you came here for!
 
-User authentication is required via either Github or Facebook logins, whereby users can then add/remove fish from their order or even add/remove entirely new fish from the database. The UI is made even firendlier with a rolling total and a few animations.
+User authentication is required via either <strong>Github</strong> or <strong>Facebook</strong> logins, whereby users can then add/remove fish from their order or even add/remove entirely new fish from the database. The UI is made even firendlier with a rolling total and a few animations.
 </div>
 </div>
 
@@ -276,7 +276,7 @@ User authentication is required via either Github or Facebook logins, whereby us
 
 My girlfriend is great at making anything look good. But she also loves to talk about food.
 
-We worked together on this WordPress blog site in order to showcase her design portfolio alongside her food, beauty and travel blog. The clean, minimalistic design suits her aesthetic down to a T and the updated blog feeds keep visitors up-to-date with all the latest posts.</div>
+We worked together on this <strong>WordPress</strong> blog site in order to showcase her design portfolio alongside her food, beauty and travel blog. The clean, minimalistic design suits her aesthetic down to a T and the updated blog feeds keep visitors up-to-date with all the latest posts.</div>
 </div>
 
 <div className="leftSectionYelp2">
@@ -312,7 +312,7 @@ We worked together on this WordPress blog site in order to showcase her design p
 <div className="text">
 Baking cakes is a tasty business. But when it comes to effectively showcasing your products, what's the best approach?
 
-Whilst this WordPress site is simplistic in its design, essential information is easily digestible and user-friendly. Customers can easily navigate between categories of previous work, price lists and contact information. Instagram and Facebook widgets ensure the very latest social media posts are always visible and that no cake is left unseen!
+Whilst this <strong>WordPress</strong> site is simplistic in its design, essential information is easily digestible and user-friendly. Customers can easily navigate between categories of previous work, price lists and contact information. Instagram and Facebook widgets ensure the very latest social media posts are always visible and that no cake is left unseen!
 </div>
 </div>
 
@@ -358,20 +358,20 @@ Whilst this WordPress site is simplistic in its design, essential information is
   <h3>The Great RGB Colour Game</h3>
   <p>It's like Bake Off, but without the Cakes. Or Paul Hollywood.
 
-This Vanilla JS interactive app generates random RGB colour squares that users must match with that of the RGB code on-screen. If six choices is too hard for you, switch to easy mode and you'll only have to deal with three!</p>
+This <strong>Vanilla JS</strong> interactive app generates random RGB colour squares that users must match with that of the RGB code on-screen. If six choices is too hard for you, switch to easy mode and you'll only have to deal with three!</p>
 </a>
 <a href="https://jakehorton.github.io/patatap/">
 <div>
   <h3>Patatap(ish)</h3>
   <p>Remember the keyboards at school that had the DJ function? Imagine that, but at home. Whenever you like. All day.
 
-This jQuery app is built using two different libraries (Paper.js and Howler.js) to bind animations and sounds to every key press you make. Useful stuff.</p>
+This <strong>jQuery</strong> app is built using two different libraries (Paper.js and Howler.js) to bind animations and sounds to every key press you make. Useful stuff.</p>
 </div>
 </a>
 <a href="https://jakehorton.github.io/todolist">
 <div>
 <h3>Henry Pooter's To-Do List</h3>
-  <p>Everyone's second (or third (or maybe even fourth)) favourite wizard needs a way of remembering what he needs to do! This interactive Todo List app is built using jQuery and allows users to cross-through completed tasks, add new tasks, and delete tasks they're 100% definitely sure they've probably done.</p>
+  <p>Everyone's second (or third (or maybe even fourth)) favourite wizard needs a way of remembering what he needs to do! This interactive Todo List app is built using <strong>jQuery</strong> and allows users to cross-through completed tasks, add new tasks, and delete tasks they're 100% definitely sure they've probably done.</p>
 </div>
 </a>
 </div>
