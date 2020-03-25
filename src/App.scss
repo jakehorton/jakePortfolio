@@ -12,9 +12,16 @@ $tablet-breakpoint: 768px;
 
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
+  // margin-left: 5rem;
   line-height: 1.5;
+  overflow-x: hidden;
+
+  
  
+}
+
+body::-webkit-scrollbar {
+  width: 0;
 }
 
 .landing {
@@ -177,22 +184,23 @@ nav {
   z-index: 3;
 }
 .nav {
+  
   position: fixed;
   top: 0;
   z-index: 5;
   height: 50px;
   background-color: white;
-  // box-shadow: 0px 10px 23px -8px rgba(194,194,194,1);
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
+
+  width: 100vw;
   color: $tertiary-color;
   @media (min-width: $desktop-breakpoint) {
     position: static;
 
   }
   a {
+    font-size: 12px;
     color: $tertiary-color;
   @media (min-width: $desktop-breakpoint) {
 font-size: 24px;
@@ -201,7 +209,7 @@ font-size: 24px;
 }
 
 .navLinks {
-  width: 50%;
+  width: 100vw;
   display: flex; 
   justify-content: space-around;
   a {
@@ -218,9 +226,11 @@ font-size: 24px;
   align-items: center;
   text-align: left;
   background-color: $secondary-color;
+  padding-bottom: 30px;
   @media (min-width: $desktop-breakpoint) {
   height: 110vh;
   flex-direction: row;
+  padding-bottom: 0;
   }
   &:hover {
     .fillHTML {
@@ -255,6 +265,7 @@ font-size: 24px;
   text-align: left;
 flex-direction: column;
   background-color: white;
+  
   @media (min-width: $desktop-breakpoint) {
   
   }
@@ -270,6 +281,24 @@ flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
   background-color: $secondary-color;
+  padding-bottom: 30px;
+  .icon {
+    color: $tertiary-color;
+    font-size: 100px;
+    padding-left: 32%;
+    padding-bottom: 50px;
+    @media (min-width: $tablet-breakpoint) {
+display: none;
+    }
+
+    
+  @media (min-width: $desktop-breakpoint) {
+    display: block;
+    padding-left: 20%;
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  }
 
   .projectTitle {
     margin-left: 20%;
@@ -330,6 +359,27 @@ flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
     background-color: white;
+    padding-bottom: 30px;
+
+    .icon {
+      color: $tertiary-color;
+      font-size: 100px;
+      padding-left: 32%;
+      padding-bottom: 50px;
+  
+      
+      @media (min-width: $tablet-breakpoint) {
+        display: none;
+            }
+        
+            
+          @media (min-width: $desktop-breakpoint) {
+            display: block;
+      padding-left: 20%;
+      padding-top: 50px;
+      padding-bottom: 0;
+    }
+  }
 
     .projectTitle {
       margin-left: 20%;
@@ -438,8 +488,9 @@ margin-left: 10%;
   align-items: left;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  margin-left: 20%;
+  width: 90%;
+  padding-left: 10%;
+  overflow-x: hidden;
   @media (min-width: $desktop-breakpoint) {
     padding-top: 50px;
 
@@ -779,6 +830,13 @@ a {
   background-size: cover;
   background-position-y: 50%;
   margin: 5px 0;
+  opacity: 0.8;
+  overflow: hidden;
+  &:hover {
+    opacity: 1;
+    transition-duration: 1s;
+
+  }
 
   @media (min-width: $desktop-breakpoint) {
     height: 300px;
@@ -796,6 +854,11 @@ a {
   width: 98%;
   background-size: cover;
   background-position-y: 50%;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    transition-duration: 1s;
+  }
   @media (min-width: $desktop-breakpoint) {
     width: 98%;
   height: 300px;
@@ -808,6 +871,11 @@ a {
   background-size: cover;
   height: 100px;
   width: 98%;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    transition-duration: 1s;
+  }
   @media (min-width: $desktop-breakpoint) {
 width: 98%;
 height: 300px;
@@ -819,6 +887,11 @@ height: 300px;
   background-size: cover;
   height: 100px;
   width: 32.5%;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    transition-duration: 1s;
+  }
   @media (min-width: $desktop-breakpoint) {
     width: 32.5%;
   height: 300px;
@@ -830,6 +903,11 @@ height: 300px;
   background-size: cover;
   height: 100px;
   width: 32.5%;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    transition-duration: 1s;
+  }
   @media (min-width: $desktop-breakpoint) {
     width: 32.5%;
   height: 300px;
@@ -842,6 +920,11 @@ height: 300px;
   background-size: cover;
   height: 100px;
   width: 32.5%;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    transition-duration: 1s;
+  }
   @media (min-width: $desktop-breakpoint) {
     width: 32.5%;
   height: 300px;
@@ -855,7 +938,11 @@ height: 300px;
   background-size: cover;
   height: 100px;
   width: 98%;
-
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    transition-duration: 1s;
+  }
   @media (min-width: $desktop-breakpoint) {
     width: 98%;
   height: 300px;
@@ -867,6 +954,12 @@ height: 300px;
   background-image: url("https://i.imgur.com/gRoURw8.jpg");
   height: 100px;
   width: 98%;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    transition-duration: 1s;
+    
+  }
   @media (min-width: $desktop-breakpoint) {
     width: 98%;
   height: 300px;
@@ -886,7 +979,8 @@ height: 300px;
   margin-bottom: 30px;
   @media (min-width: $desktop-breakpoint) {
     width: 600px;
-  margin: 50px 0;
+  margin-top: 30px;
+  margin-bottom: 60px;
 
 
   }
@@ -901,7 +995,7 @@ height: 300px;
 
 .calsy1 {
   background-image: url("https://i.imgur.com/9VO3qYc.png");
-  background-position-x: left;
+  background-position-x: 7%;
 }
 
 .jtBlogs1 {
@@ -925,6 +1019,7 @@ height: 300px;
 
 .calsy2 {
   background-image: url("https://i.imgur.com/LpIEka6.png");
+  background-position-x: 7%;
 }
 
 .jtBlogs2 {
@@ -945,6 +1040,8 @@ height: 300px;
 
 .calsy3 {
   background-image: url("https://i.imgur.com/3bSC87c.png");
+  background-position-x: center;
+
 }
 
 .jtBlogs3 {
@@ -965,6 +1062,7 @@ height: 300px;
 
 .calsy4 {
   background-image: url("https://i.imgur.com/58BRBzz.png");
+  background-position-x: 20%;
 }
 
 .jtBlogs4 {
@@ -1056,6 +1154,7 @@ height: 300px;
   height: 200px;
   width: 100%;
   background-size: cover;
+  background-position-y: 20%;
   @media (min-width: $desktop-breakpoint) {
     height: 290px;
 
@@ -1066,12 +1165,17 @@ height: 300px;
   background-image: url("https://i.imgur.com/BCz3Oii.png");
   height: 200px;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 10px;
+  overflow: hidden;
+  @media (min-width: $tablet-breakpoint) {
+    
+  }
   @media (min-width: $desktop-breakpoint) {
+    margin-left: 0;
     height: 300px;
-  margin-bottom: 0;
+  margin-bottom: -10px;
 
 
   }
@@ -1081,28 +1185,54 @@ height: 300px;
   background-image: url("https://i.imgur.com/5JxZVXn.png");
   height: 200px;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+ 
+
+  @media (min-width: $tablet-breakpoint) {
+    
+  
+
+  }
   @media (min-width: $desktop-breakpoint) {
+    margin-left: 0;
     height: 300px;
+    
 
   }
 }
 
 
 .footer {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $primary-color;
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 50px;
+  }
+  .icon {
+    margin-top: 50px;
+    font-size: 30px;
+    color: $secondary-color;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    &:hover {
+      
+      opacity: 1;
+      transition-duration: 1s;
+    }
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 50px;
+    }
+  }
   h2 {
     color: $quartinary-color;
   }
 }
 
 .contactMethod {
-  height: 100px;
+  height: fit-content;
 
   width: 100%;
   display: flex;
@@ -1125,10 +1255,11 @@ height: 300px;
     display: flex;
    flex-direction: column;
    align-items: center;
-   font-size: 20px;
-
-
+   font-size: 14px;
     justify-content: center;
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 20px;
+  }
   }
 
   .phone {
@@ -1138,8 +1269,10 @@ height: 300px;
    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-
+    font-size: 14px;
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 20px;
+    }
 
   }
 
@@ -1149,11 +1282,11 @@ height: 300px;
     display: flex;
    flex-direction: column;
    align-items: center;
-   font-size: 20px;
-
-
+   font-size: 14px;
     justify-content: center;
-
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 20px;
+    }
   }
 }
 

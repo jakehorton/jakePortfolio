@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.scss';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faReact, faJs, faNodeJs, faWordpress } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faPhone, faUserGraduate} from '@fortawesome/free-solid-svg-icons'
 
 document.addEventListener('DOMContentLoaded', function() {
 window.onscroll = function() {myFunction()};
@@ -41,7 +43,6 @@ function App() {
       
 
       <nav id="nav" className="nav">
-		    <a href="#" >HORTON <i id="cat" class="fas fa-cat"></i></a>
 		    <div  className="navLinks">
             <a href="#" >Home</a>
             <a href="#about" >About</a>
@@ -51,13 +52,13 @@ function App() {
 	    </nav>
 
       <div id="about" className="largeSection1">
-        <i class="fas fa-graduation-cap"></i>
       <div className="aboutMe">
       <h1 > <span>What makes</span> <span>my wheels turn</span>
 </h1>
 <h2>About Me</h2>
+
 <div className="text">
-      <span> My name is Jake Horton BSc MSc, and I'm a trainee Software Developer.</span>
+      <span>My name is Jake Horton BSc MSc, and I'm a trainee Software Developer.</span>
       <span> As a recent graduate of an intensive 12-week software-development bootcamp, I have been trained in many of the latest technologies used including: <strong>Javascript</strong>, <strong>Java</strong>, <strong>PostgreSQL/mySQL</strong> and have experience with frameworks and libraries including: <strong>React</strong>, <strong>Spring </strong>and <strong>Bootstrap</strong>. </span>
       <span> </span>
       </div>
@@ -157,10 +158,13 @@ function App() {
       <h1 > <span>Calsy</span> <span>Stickers Signs Designs</span>
 </h1>
 <h2>Client Website</h2>
+
 <div className="text">
 Calsy Stickers Signs Designs are a Designs and Signage company with a strong brand identity. 
 The client brief was to build a fully-responsive site that focused on UX/customer journey and that could be edited in-house as and when required, all whilst retaining the company aesthetic. I decided to build the site using <strong>Gatsby</strong> alongside <strong>Netlify CMS</strong> in order for snappy page loading, quick hosting, and and easy to use CMS for programmatically adding pages.
 </div>
+<FontAwesomeIcon className="icon" icon={faReact} />
+
 </div>
 
 <div className="RightSection">
@@ -202,6 +206,8 @@ The client brief was to build a fully-responsive site that focused on UX/custome
 <div className="text2">
 YelpCamp is a camping database built using <strong>Node.js</strong>, <strong>Express</strong> and <strong>MongoDB</strong>. The application uses RESTful routing and features user authentication and authorisation, as well as a Google Maps API. Users can create an account, login, and then go on to create and (with the right permissions) edit their own campsites!
 </div>
+<FontAwesomeIcon className="icon" icon={faNodeJs} />
+
 </div>
 
 <div className="leftSectionYelp2">
@@ -232,6 +238,8 @@ Catch Of The Day is a <strong>React</strong> app in the form of an interactive F
 
 User authentication is required via either <strong>Github</strong> or <strong>Facebook</strong> logins, whereby users can then add/remove fish from their order or even add/remove entirely new fish from the database. The UI is made even firendlier with a rolling total and a few animations.
 </div>
+<FontAwesomeIcon className="icon" icon={faReact} />
+
 </div>
 
 <div className="RightSection">
@@ -265,6 +273,7 @@ User authentication is required via either <strong>Github</strong> or <strong>Fa
   </div>
 
 </div>
+
 </div>
   
 <div className="rightSection">
@@ -277,6 +286,8 @@ User authentication is required via either <strong>Github</strong> or <strong>Fa
 My girlfriend is great at making anything look good. But she also loves to talk about food.
 
 We worked together on this <strong>WordPress</strong> blog site in order to showcase her design portfolio alongside her food, beauty and travel blog. The clean, minimalistic design suits her aesthetic down to a T and the updated blog feeds keep visitors up-to-date with all the latest posts.</div>
+<FontAwesomeIcon className="icon" icon={faWordpress} />
+
 </div>
 
 <div className="leftSectionYelp2">
@@ -314,6 +325,8 @@ Baking cakes is a tasty business. But when it comes to effectively showcasing yo
 
 Whilst this <strong>WordPress</strong> site is simplistic in its design, essential information is easily digestible and user-friendly. Customers can easily navigate between categories of previous work, price lists and contact information. Instagram and Facebook widgets ensure the very latest social media posts are always visible and that no cake is left unseen!
 </div>
+<FontAwesomeIcon className="icon" icon={faWordpress} />
+
 </div>
 
 <div className="RightSection">
@@ -356,7 +369,7 @@ Whilst this <strong>WordPress</strong> site is simplistic in its design, essenti
 <div className="text2">
 <a href="https://jakehorton.github.io/colourgame/">
   <h3>The Great RGB Colour Game</h3>
-  <p>It's like Bake Off, but without the Cakes. Or Paul Hollywood.
+  <p>It's like Bake Off, but without the cakes. Or Paul Hollywood.
 
 This <strong>Vanilla JS</strong> interactive app generates random RGB colour squares that users must match with that of the RGB code on-screen. If six choices is too hard for you, switch to easy mode and you'll only have to deal with three!</p>
 </a>
@@ -393,18 +406,22 @@ This <strong>jQuery</strong> app is built using two different libraries (Paper.j
 <div id="contact"className="footer">
 
 <div  className="viewButton"><p className="pulse2"><a className="viewMy2" href="#">Back to top<i class="fas fa-arrow-down"></i></a></p></div>
-  <div> <h2>Get in touch</h2></div>
+  {/* <div> <h2>Get in touch</h2></div> */}
   <div className="contactMethod">
     <div className="linkedIn">
-    <div><h4>Linkedin</h4></div>
+    <FontAwesomeIcon className="icon" icon={faLinkedin} />
+    
+    
     www.linkedin.com/in/jake-horton-dev
     </div>
     <div className="email">
-      <div><h4>Email</h4></div>
+    <FontAwesomeIcon className="icon" icon={faEnvelope} />
+      
     jake.horton94@hotmail.co.uk
     </div>
     <div className="phone">
-    <div><h4>Phone</h4></div>
+    <FontAwesomeIcon  className="icon" icon={faPhone} />
+    
     07472811900
     </div>
   </div>
